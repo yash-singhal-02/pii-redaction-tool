@@ -1,0 +1,19 @@
+{
+  "input_file": "/mnt/data/Red Herring Prospectus(1).docx",
+  "output_file": "/mnt/data/pii_redaction_submission/redacted_output.docx",
+  "text_replacement_events": {
+    "ADDRESS": 57,
+    "COMPANY": 191,
+    "NAME": 550,
+    "PHONE": 30,
+    "EMAIL": 70
+  },
+  "image_redaction_events": {
+    "AADHAAR": 1,
+    "PAN": 1
+  },
+  "total_text_replacements": 898,
+  "embedded_images_checked": 8,
+  "embedded_identity_images_redacted": 2,
+  "unique_text_mappings": 380
+}

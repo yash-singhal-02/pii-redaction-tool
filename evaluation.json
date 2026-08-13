@@ -1,0 +1,88 @@
+{
+  "method": "case-level synthetic positive and hard-negative tests",
+  "total_cases": 45,
+  "positive_cases": 27,
+  "negative_cases": 18,
+  "true_positive": 27,
+  "false_positive": 0,
+  "true_negative": 18,
+  "false_negative": 0,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "per_type": {
+    "NAME": {
+      "caught": 3,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "EMAIL": {
+      "caught": 3,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "PHONE": {
+      "caught": 3,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "COMPANY": {
+      "caught": 3,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "ADDRESS": {
+      "caught": 3,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "SSN": {
+      "caught": 3,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "CREDIT_CARD": {
+      "caught": 3,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "DOB": {
+      "caught": 3,
+      "missed": 0,
+      "recall": 1.0
+    },
+    "IP_ADDRESS": {
+      "caught": 3,
+      "missed": 0,
+      "recall": 1.0
+    }
+  },
+  "image_validation": {
+    "images_checked": 2,
+    "pii_regions_checked": 14,
+    "pii_regions_redacted": 14,
+    "region_redaction_rate": 1.0,
+    "details": [
+      {
+        "image": "image5.png",
+        "regions": 6,
+        "passed": 6
+      },
+      {
+        "image": "image4.png",
+        "regions": 8,
+        "passed": 8
+      }
+    ]
+  },
+  "document_validation": {
+    "unique_source_emails": 26,
+    "source_emails_remaining": 0,
+    "audited_names": 30,
+    "audited_names_remaining": 0,
+    "audited_companies": 10,
+    "audited_companies_remaining": 0,
+    "audited_addresses": 5,
+    "audited_addresses_remaining": 0
+  }
+}
