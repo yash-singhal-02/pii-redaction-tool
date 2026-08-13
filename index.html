@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PII Redaction Tool</title>
+  <style>
+    body{font-family:Arial,sans-serif;background:#f5f5f5;margin:0}
+    .box{max-width:650px;margin:80px auto;background:white;padding:35px;border-radius:10px;box-shadow:0 2px 12px #ddd}
+    h1{margin-top:0}
+    .note{color:#555;line-height:1.5}
+    input{margin:18px 0}
+    button{padding:10px 18px;border:0;border-radius:6px;cursor:pointer}
+    .error{color:#b00020;margin-top:15px}
+  </style>
+</head>
+<body>
+<div class="box">
+  <h1>PII Redaction Tool</h1>
+  <p class="note">Upload a DOCX document and the tool will detect supported PII and replace it with safe fake values.</p>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".docx" required><br>
+    <button type="submit">Redact PII</button>
+  </form>
+  {% if error %}<p class="error">{{ error }}</p>{% endif %}
+</div>
+</body>
+</html>
