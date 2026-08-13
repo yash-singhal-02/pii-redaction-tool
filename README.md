@@ -98,3 +98,6 @@ This is intentionally a small student-friendly implementation. A production syst
 Regex works well for structured values but can miss unusual formats. Name and company detection depends on context, so an isolated name without useful surrounding text can be missed. OCR can also make mistakes on low-quality images. The identity-card image handling therefore combines OCR-based card identification with layout-based redaction for the actual images present in the supplied prospectus.
 
 The supplied prospectus does not provide normal text examples of SSNs or credit-card numbers, so those were evaluated using synthetic test cases. The Aadhaar and PAN information was present inside images, which is why image processing was added after inspecting the complete DOCX rather than relying only on extracted text.
+
+## Author
+Yash Singhal
